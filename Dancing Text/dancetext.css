@@ -1,0 +1,53 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+ul{
+	display: flex;
+}
+
+ul li{
+	list-style: none;
+	font-size: 5rem;
+	font-weight: bold;
+	margin: -1px;
+	color: #a49a97;
+	animation: avengers 0.5s infinite;
+}
+
+@keyframes avengers{
+	25%{
+		transform: rotate(5deg) translate(1px, 2px);
+		color: #f442df;
+		filter: blur(1px);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+ul li:nth-child(1){
+	animation-delay: 0.1s;
+}
+
+ul li:nth-child(2){
+	animation-delay: 0.2s;
+}
+ul li:nth-child(3){
+	animation-delay: 0.3s;
+}
+ul li:nth-child(4){
+	animation-delay: 0.4s;
+}
+ul li:nth-child(5){
+	animation-delay: 0.5s;
+}
+ul li:nth-child(6){
+	animation-delay: 0.6s;
+}
