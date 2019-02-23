@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+h1{
+	color: #fff;
+	font-size: 4.5rem;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	transform: skew(-5deg);
+}
+
+.left{
+	position: absolute;
+	background-color: #fff;
+	width: 300px;
+	height: 90px;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -300px;
+	border-radius: 80px 0px 0px 80px;
+	animation: stark alternate 0.2s infinite;
+}
+
+@keyframes stark{
+	0%{
+		background-color: blue;
+		filter: blur(2.5px);
+	}
+	25%{
+		background-color: linear-gradient(red, blue);
+	}
+	50%{
+		background-color: linear-gradient(blue, red);
+	}
+	75%{
+		background-color: linear-gradient(red, blue);
+	}
+	100%{
+		background-color: red;
+		filter: blur(2.5px);
+	}
+}
+
+.right{
+	position: absolute;
+	background-color: #fff;
+	width: 300px;
+	height: 90px;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -1px;
+	border-radius: 0px 80px 80px 0px;
+	animation: westeros alternate 0.2s infinite;
+}
+
+@keyframes westeros{
+	0%{
+		background-color: red;
+		filter: blur(2.5px);
+	}
+	25%{
+		background-color: linear-gradient(blue, red);
+	}
+	50%{
+		background-color: linear-gradient(red, blue);
+	}
+	75%{
+		background-color: linear-gradient(blue, red);
+	}
+	100%{
+		background-color: blue;
+		filter: blur(2.5px);
+	}
+}
