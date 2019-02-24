@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+*{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+body{
+	background: #1e252f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+svg{
+	max-width: 900px;
+	height: auto;
+	font-weight: bold;
+}
+
+
